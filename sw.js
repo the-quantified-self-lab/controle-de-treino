@@ -1,14 +1,16 @@
 // Service worker — Controle de Treino
 // Deixa o app abrir e funcionar 100% offline (registro de treino não depende de internet).
 // Usa caminhos RELATIVOS, então continua funcionando mesmo se o repositório for renomeado.
-const CACHE = "controle-treino-v1";
+const CACHE = "controle-treino-v2";
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./icon-180.png",
   "./icon-192.png",
-  "./icon-512.png"
+  "./icon-512.png",
+  "./favicon-32.png",
+  "./favicon-48.png"
 ];
 
 self.addEventListener("install", (e) => {
